@@ -15,7 +15,6 @@ if parallel_active == True:
 
 lattice_size=6
 N_max=2
-
 operators_list=[]
 
 a = tensor(destroy(N_max), identity(N_max))
