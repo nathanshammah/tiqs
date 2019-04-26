@@ -20,8 +20,8 @@ import scipy as sc
 import matplotlib.pyplot as plt
 import time
 
-## this is for my pc, can be commented
-from qutip.parallel import parfor, parallel_map, serial_map
+## this is for spcific configurations, can be commented
+#from qutip.parallel import parfor, parallel_map, serial_map
 
 
 

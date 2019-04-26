@@ -1,6 +1,6 @@
-from piqs.dicke import *
-from piqs.cy.dicke import jmm1_dictionary
-from piqs.about import *
-from piqs.cite import *
+from qutip import *
+import numpy as np
+import scipy as sc
+import time
 
-__version__ = '1.0'
+__version__ = '0.1'
