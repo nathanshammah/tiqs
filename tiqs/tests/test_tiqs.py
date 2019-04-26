@@ -9,19 +9,17 @@ from numpy.testing import (assert_, run_module_suite, assert_raises,
 import qutip as qt
 from tiqs import *
 
-
 class TestTiqs:
     """
     A test class for the Translational Invariant Quantum Solver.
     """
 
-    def test_basis(self):
+    def test_traslation(self):
         """
-        Test the `basis` function.
+        Test the `traslation` function.
         """
-        n_cutoff = 2
-        n_excitation = 1
-        test_basis = qt.basis(n_cutoff,n_excitation)
+        
+        test_basis = traslation("010")
         true_basis = qt.fock(n_cutoff,n_excitation)        
         assert_equal(test_basis, true_basis)
 

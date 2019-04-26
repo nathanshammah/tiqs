@@ -110,7 +110,12 @@ def find_representative_traslation_and_Zn(N_max, lattice_size, Z_n):
 
 # having obtained the representatives we can construct the rotation matrix wich 
 # block diagonalise the effective Hamiltonian
-def rotation_matrix(N_max, lattice_size, representatives, return_size=1, return_Qobj=0, Hamiltonian_size=N_max**lattice_size): 
+def rotation_matrix(N_max, lattice_size, representatives, 
+    return_size=1, return_Qobj=0, Hamiltonian_size=None):
+
+    if Hamiltonian_size == None:
+        Hamiltonian_size = N_max**lattice_size
+
     # initialise the matrix
     rotation = 0*1.j*np.ones([N_max**lattice_size, N_max**lattice_size])
 
