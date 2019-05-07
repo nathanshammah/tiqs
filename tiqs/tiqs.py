@@ -24,7 +24,7 @@ import time
 def traslation(string):
     traslated_string = string[1:] + string[0]
     return traslated_string
-####    
+
 # Here we define the function write_state_as_number. Given a Hilbert space, 
 # we enumerate them with a index. The function np.base_repr(number, base) 
 # return a string representation of a number in the given base system.
